@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Password Generator</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="demo-styles.css" rel="stylesheet" />
+		<link href="password-generator-1.0.0.css" rel="stylesheet" />
+	</head>
+	<body>
+		<main class="wrap">
+
+			<h1>Password Generator</h1>
+
+			<div class="newpass">
+
+				<div class="form__field newpass__main">
+					<label class="form__label newpass__label" for="Password">New Password</label>
+					<input class="form__input newpass__input" autocomplete="new-password" type="text" name="Password" id="Password" />
+					<button type="button" class="newpass__randomise">&orarr;</button>
+				</div>
+
+				<h2 class="newpass__title">Randomiser settings: </h2>
+
+				<div class="form__field form__field--range">
+					<label class="form__label form__label--range" for="PasswordLength">Length</label>
+					<input class="form__input form__input--range" type="range" min="10" step="1" value="16" max="256" />
+					<input class="form__input form__input--number form__input--rangeout" type="number" value="16" min="10" step="1" name="PasswordLength" id="PasswordLength" />
+				</div>
+
+				<div class="form__field form__field--checkbox">
+					<input class="form__input form__input--checkbox newpass__toggle" type="checkbox" name="UseLower" id="UseLower" value="1" checked />
+					<label class="form__label form__label--checkbox" for="UseLower">Use lower case letters</label>
+				</div>
+
+				<div class="form__field form__field--checkbox">
+					<input class="form__input form__input--checkbox newpass__toggle" type="checkbox" name="UseUpper" id="UseUpper" value="1" checked />
+					<label class="form__label form__label--checkbox" for="UseUpper">Use upper case letters</label>
+				</div>
+
+				<div class="form__field form__field--checkbox">
+					<input class="form__input form__input--checkbox newpass__toggle" type="checkbox" name="UseNumbers" id="UseNumbers" value="1" checked />
+					<label class="form__label form__label--checkbox" for="UseNumbers">Use numbers</label>
+				</div>
+
+				<div class="form__field form__field--checkbox">
+					<input class="form__input form__input--checkbox newpass__toggle" type="checkbox" name="UseSymbols" id="UseSymbols" value="1" checked />
+					<label class="form__label form__label--checkbox" for="UseSymbols">Use symbols</label>
+				</div>
+
+				<div class="form__field form__field--checkbox">
+					<input class="form__input form__input--checkbox newpass__toggle" type="checkbox" name="UseEmoji" id="UseEmoji" value="1" />
+					<label class="form__label form__label--checkbox" for="UseEmoji">Use emoji</label>
+				</div>
+
+			</div>
+
+		</main>
+		<script src="password-generator-1.0.0.js"></script>
+	</body>
+</html>
